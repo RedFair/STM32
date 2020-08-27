@@ -1,0 +1,20 @@
+--cpu Cortex-M0+
+"rtc_wkup_tim\startup_stm32l053xx.o"
+"rtc_wkup_tim\main.o"
+"rtc_wkup_tim\gpio.o"
+"rtc_wkup_tim\rtc.o"
+"rtc_wkup_tim\usart.o"
+"rtc_wkup_tim\stm32l0xx_it.o"
+"rtc_wkup_tim\stm32l0xx_ll_gpio.o"
+"rtc_wkup_tim\stm32l0xx_ll_rtc.o"
+"rtc_wkup_tim\stm32l0xx_ll_rcc.o"
+"rtc_wkup_tim\stm32l0xx_ll_utils.o"
+"rtc_wkup_tim\stm32l0xx_ll_exti.o"
+"rtc_wkup_tim\stm32l0xx_ll_pwr.o"
+"rtc_wkup_tim\stm32l0xx_ll_usart.o"
+"rtc_wkup_tim\stm32l0xx_ll_dma.o"
+"rtc_wkup_tim\system_stm32l0xx.o"
+--library_type=microlib --strict --scatter "RTC_WKUP_TIM\RTC_WKUP_TIM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RTC_WKUP_TIM.map" -o RTC_WKUP_TIM\RTC_WKUP_TIM.axf
